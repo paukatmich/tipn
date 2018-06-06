@@ -1,6 +1,4 @@
-ZADANIE 2
-
-1.
+#zad2-1
 kwartal_1 <- c("Styczeń","Luty","Marzec")
 kwartal_2 <- c("Kwiecień","Maj","Czerwiec")
 kwartal_3 <- c("Lipiec","Sierpień","Wrzesień")
@@ -25,11 +23,11 @@ sd(nchar(rok[c(1,2,3,12)]))
 subset(rok, endsWith(rok,"ec")) 
 
 
-2.
+#zad2-2
 manipulacja <- 0
 as.numeric(difftime(as.Date("2021-06-30"), Sys.time(), units = "hours"))+manipulacja*365*24
 
-3.
+#zad2-3
 lata <- c(1800:2018)
 for(i in lata){
 if(i %% 4 == 0) {if(i %% 100 != 0) {
@@ -38,14 +36,14 @@ print(i)
 }
 }
 
-4.
+#zad2-4
 n <- 1800
 while(n<=2018){
   if((n%%4==0 & n%%100!=0)|n%%400==0){print(n)}
   n <- n+4
 }
 
-5.
+#zad2-5
  n <- 1800
 > while(n<=2018){
 if((n%%4==0 & n%%100!=0)|n%%400==0){print(n)}
